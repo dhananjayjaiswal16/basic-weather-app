@@ -1,0 +1,22 @@
+@import "../variables/variables.scss";
+
+.cityContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $white;
+  padding: 0 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+  font-family: $main-font;
+  .link{
+    text-decoration: none;
+    color: inherit;
+  }
+  .name{
+    text-decoration: none;
+  }
+  .delete{
+    cursor: pointer;
+  }
+}

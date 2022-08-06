@@ -1,0 +1,64 @@
+@import "../variables/variables.scss";
+
+.popupContainer{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: $app-bg-color;
+}
+.popup{
+  background-color: $white;
+  width: 300px;
+  border-radius: 10px;
+  padding: 10px 30px;
+  margin-top: 150px;
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 23px;
+  }
+  i{
+    color: $danger;
+    background-color: rgb(255, 162, 162);
+    border-radius: 100%;
+    padding: 5px 8px;
+    cursor: pointer;
+  }
+  input {
+    @include inputStyle(rgb(223, 223, 223)); 
+  }
+  .btnContainer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    button {
+      border-radius: 5px;
+      margin: 7px;
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: $transition;
+      border: none;
+    }
+    .btn1 {
+      color: $primary-color;
+      background-color: $white;
+      border: solid 1px $primary-color;
+      &:hover{
+        background-color: rgb(240, 240, 240);
+      }
+    }
+    .btn2 {
+      color: $white;
+      background-color: $primary-color;
+      &:hover{
+        background-color: $secondary-color;
+      }
+    }
+  }
+}
